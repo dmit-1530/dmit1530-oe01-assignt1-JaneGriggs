@@ -1,17 +1,246 @@
+.libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 :root {
     --blue-grey-50: #ECEFF1;
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
     --blue-grey-900: #263238;
+    --annie-setter: #78909C;
+
+    --header-background: #111111;
+    --footer-background: #191919;
+    --header-footer-color: #ffffff;
 }
 
+
+
+header {
+
+    background-color: var(--header-background);
+    color: #fff;
+    padding: 2rem 4rem;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    max-height: 11rem;
+
+}
+
+.logo-text {
+    font-family: "Libre Baskerville", serif;
+    font-size: 6em;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+div img {
+    max-width: 10em;
+    max-height: 8em;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+header nav p {
+    font-size: 1.4rem;
+}
+
+h2,
 body {
     color: #000;
-    text-align: center; 
+    text-align: center;
 }
 
-header, footer {
+h2 {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 2.8rem;
+    margin-top: 0;
+}
+
+h2:first-child {
+    padding-top: 4rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+section {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.asterisk {
+    font-size: 4rem;
+    margin: 0rem;
+    max-height: 4rem;
+}
+
+.asterisk-first {
+    padding-top: 6rem;
+    margin-top: 0rem;
+    font-size: 4rem;
+    max-height: 4rem;
+}
+
+section p {
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+}
+
+.annie-setter {
+    padding-bottom: 4rem;
+    background-color: var(--annie-setter);
+    color: var(--blue-grey-50);
+}
+
+.annie-setter p {
+    margin-bottom: 1rem;
+}
+
+.annie-setter h2 {
+    color: var(--blue-grey-50);
+}
+
+section:first-child {
     background-color: var(--blue-grey-50);
+}
+
+main section img {
+
+    border-radius: 2rem;
+    margin: 3rem 0rem;
+    padding: 2rem 0rem;
+}
+
+a {
+    padding: 1.5rem 2rem;
+    background-color: var(--header-background);
+    border: #000 solid 2px round;
+    border-radius: .60rem;
+    text-decoration: none;
+    color: var(--blue-grey-50);
+}
+
+.your-world {
+    font-size: 2.5rem;
+    margin-top: 0rem;
+}
+
+.section-two {
+    background-color: var(--blue-grey-100);
+    padding-bottom: 2rem;
+}
+
+.section-two img {
+    margin-bottom: 0rem;
+}
+
+.asterisk-left {
+    text-align: left;
+    font-size: 4rem;
+    margin: 0rem;
+    max-height: 4rem;
+}
+
+.list-heading {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding: 0rem 1.5rem;
+}
+
+li {
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.section-three {
+    background-color: var(--blue-grey-900);
+    padding: 5rem 2.5rem;
+}
+
+.section-three div {
+    border: #fff solid 2px;
+    background-color: white;
+    border-radius: .60rem;
+    padding: 0rem 2rem 6rem 2rem;
+
+}
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--footer-background);
     color: #fff;
-    padding: 2rem 4rem;   
+    padding: 2rem 4rem;
+}
+
+footer img {
+    max-width: 8em;
+    max-height: 6em;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+footer:nth-child(3) {
+    color: var(--blue-grey-200);
+    text-align: left;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+footer ul {
+    padding-left: 0rem;
+    padding-right: 4rem;
+}
+
+footer li {
+    font-size: 1rem;
+    list-style-type: none;
+    text-align: left;
+}
+
+footer nav ul li:first-child {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+footer:last-child {
+    color: var(--blue-grey-200);
+
 }
