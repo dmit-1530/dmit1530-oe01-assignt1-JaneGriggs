@@ -8,19 +8,23 @@
     --blue-grey-50: #ECEFF1;
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
+    --blue-grey-800: #37474f;
     --blue-grey-900: #263238;
     --annie-setter: #78909C;
+    --ED-text-color: #EDEDED;
+
 
     --header-background: #111111;
     --footer-background: #191919;
-    --header-footer-color: #ffffff;
+    --white: #ffffff;
 }
 
+/*Header remains the same for all pages per assignment specs*/
 header {
 
     background-color: var(--header-background);
-    color: #fff;
-    padding: 2rem 4rem;
+    color: var(--white);
+    padding: 2rem 2.5rem;
 }
 
 .flex-header {
@@ -50,8 +54,10 @@ header nav {
     justify-content: space-around;
 }
 
-header nav p {
-    font-size: 1.4rem;
+header nav a {
+    font-size: 1.6rem;
+    padding: 1rem 1rem;
+
 }
 
 h2,
@@ -76,8 +82,8 @@ h3 {
 }
 
 section {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 .asterisk {
@@ -188,12 +194,13 @@ span {
 
 }
 
+/*Footer remains the same for all pages per assignment specs*/
 footer {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--footer-background);
     color: #fff;
-    padding: 2rem 4rem;
+    padding: 2rem 2.5rem;
 }
 
 footer img {
@@ -211,7 +218,7 @@ footer:nth-child(3) {
 footer nav {
     display: flex;
     flex-direction: row;
-    color: white;
+    color: var(--white);
 }
 
 footer ul {
@@ -239,3 +246,97 @@ footer p:last-child {
     text-align: center;
 
 }
+
+/*MEDIA QUERIES FOR HOME PAGE*/
+
+
+
+/*THE FOLLOWING CSS IS FOR GALLERY PAGE*/
+
+/*  --blue-grey-50: #ECEFF1;
+    --blue-grey-100: #CFD8DC;
+    --blue-grey-200: #B0BEC5;
+    --blue-grey-900: #263238;
+    --annie-setter: #78909C;
+*/
+.gallery-one {
+    padding-bottom: 3rem;
+}
+
+.gallery-one h2 {
+    margin: 0 auto;
+    padding-top: 6rem;
+    font-family: "Libre Baskerville", serif;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.gallery-one img {
+    margin: 0 auto;
+    padding-top: 2.5rem;
+}
+
+.gallery-one p,
+.gallery-one h3 {
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.gallery-one h3 {
+    padding-bottom: 2rem;
+}
+
+.gallery-two h2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 300;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.gallery-three {
+    background-color: var(--annie-setter);
+    text-align: left;
+    color: var(--white);
+    padding-bottom: 2rem;
+}
+
+.gallery-three h2 {
+    padding-top: 5rem;
+    color: var(--white);
+    font-family: "Libre Baskerville", serif;
+    text-align: left;
+    font-size: 3rem;
+}
+
+.gallery-three p {
+    margin-bottom: 2rem;
+}
+
+.gallery-four {
+    background-color: var(--blue-grey-900);
+    padding-bottom: 1.5rem;
+}
+
+.gallery-four h2 {
+    font-family: "Libre Baskerville", serif;
+    text-align: left;
+    color: var(--white);
+}
+
+.gallery-four img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gallery-four li {
+    color: var(--white);
+}
+
+.gallery-four p {
+    text-align: left;
+    color: var(--ED-text-color);
+
+}
+
+/*MEDIA QUERIES FOR GALLERY PAGE*/
