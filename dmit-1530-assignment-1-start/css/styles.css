@@ -23,7 +23,7 @@ header {
     padding: 2rem 4rem;
 }
 
-header div {
+.flex-header {
     display: flex;
     flex-direction: row;
     max-height: 11rem;
@@ -215,14 +215,18 @@ footer nav {
 }
 
 footer ul {
-    padding-left: 0rem;
-    padding-right: 4rem;
+    justify-content: center;
 }
 
 footer li {
     font-size: 1rem;
     list-style-type: none;
     text-align: left;
+
+}
+
+footer li a {
+    padding: 0;
 }
 
 footer nav ul li:first-child {
