@@ -19,45 +19,47 @@
     --white: #ffffff;
 }
 
-/*Header remains the same for all pages per assignment specs*/
-header {
+.container {
+    max-width: 75rem;
+    min-width: 27.5rem;
+    margin: 0 auto;
+}
 
-    background-color: var(--header-background);
+/*Header remains the same for all pages per assignment specs*/
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--footer-background);
     color: var(--white);
     padding: 2rem 2.5rem;
+    justify-content: center;
 }
 
-.flex-header {
-    display: flex;
-    flex-direction: row;
-    max-height: 11rem;
-
-}
-
-.logo-text {
+.logo-text-header {
     font-family: "Libre Baskerville", serif;
-    font-size: 6em;
+    font-size: 5.5em;
     margin-top: 1rem;
     margin-bottom: 0;
+    color: var(--white);
 }
 
-div img {
-    max-width: 10em;
-    max-height: 8em;
+header img {
+    max-width: 6.5em;
+    max-height: 6.5em;
     margin-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2.5rem;
 }
 
 header nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 header nav a {
-    font-size: 1.6rem;
-    padding: 1rem 1rem;
-
+    font-size: 1.2rem;
+    justify-content: center;
 }
 
 h2,
@@ -67,7 +69,7 @@ body {
 }
 
 h2 {
-    font-family: sans-serif;
+    font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-size: 2.8rem;
     margin-top: 0;
@@ -195,19 +197,28 @@ span {
 }
 
 /*Footer remains the same for all pages per assignment specs*/
+.logo-text {
+    font-family: "Libre Baskerville", serif;
+    font-size: 5em;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color: var(--white);
+}
+
 footer {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--footer-background);
-    color: #fff;
+    color: var(--white);
     padding: 2rem 2.5rem;
 }
 
 footer img {
-    max-width: 8em;
-    max-height: 6em;
-    margin-top: 3rem;
-    padding-bottom: 1.5rem;
+    width: 9em;
+    height: 5em;
+    padding-left: 1rem;
+    margin-top: 2rem;
+
 }
 
 footer:nth-child(3) {
@@ -218,18 +229,26 @@ footer:nth-child(3) {
 footer nav {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     color: var(--white);
+
+    width: 100%;
 }
 
 footer ul {
-    justify-content: center;
+
+    padding-left: 0rem;
+    padding-right: 20%;
+}
+
+footer ul:last-child {
+    padding-right: 0rem;
 }
 
 footer li {
     font-size: 1rem;
     list-style-type: none;
     text-align: left;
-
 }
 
 footer li a {
@@ -244,10 +263,9 @@ footer nav ul li:first-child {
 footer p:last-child {
     color: var(--blue-grey-200);
     text-align: center;
-
 }
 
-/*MEDIA QUERIES FOR HOME PAGE*/
+
 
 
 
@@ -259,6 +277,12 @@ footer p:last-child {
     --blue-grey-900: #263238;
     --annie-setter: #78909C;
 */
+.gallery-container {
+    max-width: 64rem;
+    min-width: 27.5rem;
+    margin: 0 auto;
+}
+
 .gallery-one {
     padding-bottom: 3rem;
 }
@@ -339,4 +363,330 @@ footer p:last-child {
 
 }
 
+/*MEDIA QUERIES FOR HOME PAGE*/
+@media screen and (min-width:720px) {
+
+    header {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0rem 0rem 2rem 2rem;
+
+    }
+
+    .logo-text-header {
+        font-family: "Libre Baskerville", serif;
+        font-size: 4em;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        color: var(--white);
+    }
+
+    header img {
+        max-width: 5em;
+        max-height: 6em;
+        margin-top: 2rem;
+        padding-bottom: 1.8rem;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 58%;
+        align-items: flex-end;
+    }
+
+    header nav a {
+        font-size: 1rem;
+        padding: 1rem;
+        padding-bottom: 2rem;
+
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    section p {
+        font-size: 1.2rem;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .flex-container div {
+        width: 45%;
+        text-align: left;
+    }
+
+    .flex-container p {
+        margin: 0rem;
+    }
+
+    section:nth-child(2) {
+        padding-bottom: 4rem;
+    }
+
+    .your-world {
+        margin-bottom: 0rem;
+    }
+
+    .flex-container-two {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flex-container-two div {
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .list-heading {
+        margin-top: 0rem;
+    }
+
+    .flex-container-two img {
+        width: 50%;
+        height: 5vh;
+    }
+
+    .reverse-flex {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+    }
+
+    .reverse-flex div {
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .reverse-flex img {
+        width: 50%;
+        height: 5vh;
+    }
+
+    .section-three div {
+        width: 80%;
+        margin-left: 8vw;
+        padding-bottom: 5rem;
+    }
+
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    footer nav {
+        order: 1;
+        width: 45vw;
+        padding-left: 2rem;
+
+    }
+
+    footer p:nth-child(3) {
+        order: 2;
+        width: 47%;
+        justify-content: center;
+        margin-top: 0rem;
+        font-size: .75rem;
+    }
+
+    footer p:last-child {
+        order: 3;
+        font-size: .75rem;
+        width: 68%;
+        margin-left: 15%;
+    }
+
+    .logo-text {
+        width: 32%;
+        height: 40%;
+        font-size: 4.5rem;
+    }
+
+    footer img {
+        width: 17%;
+        padding-left: 0rem;
+        margin-top: 1.5rem;
+    }
+
+    footer ul {
+        padding-right: 2.5rem;
+        margin-bottom: 0rem;
+        height: 4rem;
+    }
+
+    footer ul:last-child {
+        padding: 0rem;
+    }
+
+    footer li {
+        margin: .2rem;
+        font-size: .75rem;
+        padding-bottom: .5rem;
+    }
+
+    footer nav ul li:first-child {
+        font-size: 1rem;
+    }
+}
+
+
 /*MEDIA QUERIES FOR GALLERY PAGE*/
+@media screen and (min-width:720px) {
+
+    .gallery-one h2 {
+        padding-top: 3rem;
+    }
+
+    .gallery-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .gallery-flex div {
+        width: 50%;
+    }
+
+    .gallery-flex h3 {
+        margin: 0rem;
+        padding-bottom: 0rem;
+        margin-top: 2rem;
+    }
+
+    .gallery-flex img {
+        width: 47%;
+        height: 5vh;
+        margin: 0rem;
+    }
+
+    .gallery-reverse-flex {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: flex-end;
+
+    }
+
+    .gallery-reverse-flex img {
+        width: 47%;
+        height: 5vh;
+    }
+
+    .gallery-reverse-flex div {
+        width: 47%;
+    }
+
+    .gallery-reverse-flex h3 {
+        margin: 0rem;
+        padding-bottom: 0rem;
+        margin-top: 2rem;
+    }
+
+    .gallery-reverse-flex-image {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .gallery-reverse-flex-image img {
+        width: 100%;
+        margin-top: 0rem;
+        padding-bottom: 1rem;
+        border-radius: 0rem;
+    }
+
+    .gallery-reverse-flex-image p {
+        margin-top: 0rem;
+    }
+
+    .gallery-two h2 {
+        padding-bottom: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .gallery-three {
+        height: 18vh;
+    }
+
+    .gallery-three div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 18vh;
+        gap: 1rem;
+        width: 48%;
+
+    }
+
+    .gallery-three h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        width: 100%;
+        padding-top: 3rem;
+        margin-bottom: 0rem;
+    }
+
+    .gallery-three div p {
+
+        width: 100%;
+        height: 6.5vh;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .gallery-four {
+        height: 22.5vh;
+    }
+
+    .gallery-four div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 25vh;
+        gap: 1.5rem;
+    }
+
+    .gallery-four h2 {
+        text-align: center;
+    }
+
+    .gallery-four div img {
+        width: 48%;
+        margin: 0rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        border-radius: 0rem;
+    }
+
+    .gallery-four div img:first-child {
+        height: 18.2vh;
+    }
+
+    .gallery-four ul {
+        width: 55%;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+    .gallery-four div li {
+        width: 100%;
+    }
+
+    .hide-me {
+        display: none;
+    }
+
+    .gallery-four p {
+        width: 48%;
+        margin-top: 0rem;
+    }
+
+
+}
